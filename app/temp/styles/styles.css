@@ -913,13 +913,18 @@ a {
 
 .feature-item {
 	position: relative;
-	padding-bottom: 2.5rem;
+	padding-bottom: 1.5rem;
 }
 
 @media (min-width: 530px) {
 
 .feature-item {
-		padding-left: 94px
+		background-color: rgba(255,255,255, .25);
+		margin: 45px 0px 5px 0px;
+		border-radius: 5px;
+		padding: 5px 5px 5px 100px;
+		-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.85);
+		        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.85)
 }
 	}
 
@@ -932,7 +937,8 @@ a {
 
 .feature-item__icon {
 			position: absolute;
-			left: 0
+			left: 0;
+			margin: 75px 0px 0px 15px
 	}
 	}
 
@@ -1335,4 +1341,18 @@ a {
 			font-size: 1rem;
 			background-color: transparent
 	}
+	}
+
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
